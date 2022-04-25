@@ -1,6 +1,6 @@
 # Manual Workflow Approval
 
-[![ci](https://github.com/trstringer/manual-approval/actions/workflows/ci.yaml/badge.svg)](https://github.com/trstringer/manual-approval/actions/workflows/ci.yaml)
+[![ci](https://github.com/puskartrital/manual-approval/actions/workflows/ci.yaml/badge.svg)](https://github.com/puskartrital/manual-approval/actions/workflows/ci.yaml)
 
 Pause a GitHub Actions workflow and require manual approval from one or more approvers before continuing.
 
@@ -26,7 +26,7 @@ In all cases, `manual-approval` will close the initial GitHub issue.
 
 ```yaml
 steps:
-  - uses: trstringer/manual-approval@v1
+  - uses: puskartrital/manual-approval@main
     with:
       secret: ${{ github.TOKEN }}
       approvers: user1,user2
